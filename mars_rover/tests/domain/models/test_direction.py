@@ -1,4 +1,4 @@
-from mars_rover.domain.direction import Direction
+from mars_rover.domain.models.direction import Direction
 
 def test_turn_left_cycle():
     assert Direction.N.left() == Direction.W
