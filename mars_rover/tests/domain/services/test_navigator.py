@@ -32,7 +32,7 @@ def test_move_forward_basic():
 
 def test_move_ignored_when_out_of_bounds():
     """If the next cell is out of bounds, movement is ignored (returns False)."""
-    nav = Navigator(Plateau(2, 2, obstacles=set()))  # valid coords: 0..1
+    nav = Navigator(Plateau(1, 1, obstacles=set()))  # valid coords: 0..1
     r = Rover(Position(1, 1), Direction.N)
 
     moved, r2 = nav.move(r)
